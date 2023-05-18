@@ -1,0 +1,22 @@
+@test-color: red;
+@theme-bg-color: #000;
+@theme-bg-image: linear-gradient(to right bottom, #ffff08, #e06262);
+@theme-text-color: #ffff08;
+:root {
+  --test-color: @test-color;
+  --theme-bg-color: @theme-bg-color;
+  --theme-bg-image: @theme-bg-image;
+  --theme-text-color: @theme-text-color;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--theme-bg-color);
+}
